@@ -1,0 +1,23 @@
+<h1>Listing unobtrusive_jikochus</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @unobtrusive_jikochus.each do |unobtrusive_jikochu| %>
+  <tr>
+    <td><%= unobtrusive_jikochu.name %></td>
+    <td><%= link_to 'Show', unobtrusive_jikochu %></td>
+    <td><%= link_to 'Edit', edit_unobtrusive_jikochu_path(unobtrusive_jikochu) %></td>
+    <td><%= link_to 'Destroy', unobtrusive_jikochu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Unobtrusive jikochu', new_unobtrusive_jikochu_path %>

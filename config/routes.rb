@@ -1,4 +1,7 @@
 Conflictors::Application.routes.draw do
+  resources :unobtrusive_jikochus
+
+
   resources :jikochus
 
 
