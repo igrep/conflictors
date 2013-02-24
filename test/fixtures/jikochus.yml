@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  fought_at: 2013-02-24 21:29:18
+
+two:
+  name: MyString
+  fought_at: 2013-02-24 21:29:18

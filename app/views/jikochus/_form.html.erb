@@ -1,0 +1,25 @@
+<%= form_for(@jikochu) do |f| %>
+  <% if @jikochu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@jikochu.errors.count, "error") %> prohibited this jikochu from being saved:</h2>
+
+      <ul>
+      <% @jikochu.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :fought_at %><br />
+    <%= f.datetime_select :fought_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

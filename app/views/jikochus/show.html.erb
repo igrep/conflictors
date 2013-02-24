@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @jikochu.name %>
+</p>
+
+<p>
+  <b>Fought at:</b>
+  <%= @jikochu.fought_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_jikochu_path(@jikochu) %> |
+<%= link_to 'Back', jikochus_path %>

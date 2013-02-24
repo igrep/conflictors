@@ -1,0 +1,25 @@
+<h1>Listing jikochus</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Fought at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jikochus.each do |jikochu| %>
+  <tr>
+    <td><%= jikochu.name %></td>
+    <td><%= jikochu.fought_at %></td>
+    <td><%= link_to 'Show', jikochu %></td>
+    <td><%= link_to 'Edit', edit_jikochu_path(jikochu) %></td>
+    <td><%= link_to 'Destroy', jikochu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Jikochu', new_jikochu_path %>
