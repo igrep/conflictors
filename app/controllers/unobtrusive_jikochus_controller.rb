@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # GistID: 5023809
+# Tried by: Rails 3.2.12
 
 # 控えめで (Unobtrusive) 自己中な (Selfish) Controller
 class UnobtrusiveJikochusController < ApplicationController
